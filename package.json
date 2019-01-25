@@ -1,0 +1,26 @@
+{
+  "name": "little-album",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JokerPawn/LittleAlbum.git"
+  },
+  "author": "Joker",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "formidable": "^1.0.17",
+    "silly-datetime": "^0.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/JokerPawn/LittleAlbum/issues"
+  },
+  "homepage": "https://github.com/JokerPawn/LittleAlbum#readme",
+  "description": ""
+}
