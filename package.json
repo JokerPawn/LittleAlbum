@@ -13,9 +13,12 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
+    "body-parser": "^1.18.3",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "formidable": "^1.0.17",
+    "gm": "^1.23.1",
+    "multer": "^1.4.1",
     "silly-datetime": "^0.1.0"
   },
   "bugs": {

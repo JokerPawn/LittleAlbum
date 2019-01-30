@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>littleAlbum up</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <style type='text/css'>
+        body{
+            padding-top: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<% include header.ejs %>
+
+<div class="container">
+    <div class="row">
+        <form style='width: 40%' method='post' action='/doUp' enctype="multipart/form-data">
+        <!--<form style='width: 40%' action='/doUp' enctype="multipart/form-data">-->
+        <!--<form style='width: 40%'>-->
+
+            <div class="form-group">
+                <label for='albumName'>请选择文件夹</label>
+                <select class="form-control" id='albumName' name='albumName'>
+                    <% for (var i = 0; i < allAlbums.length; i++) { %>
+                        <option><%= allAlbums[i]%></option>
+                    <%}%>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputFile">选择图片</label>
+                <p class="help-block">尺寸小于1M</p>
+                <input type="file" id="exampleInputFile" name='image'>
+            </div>
+            <button type='submit' class="btn btn-default">上传</button>
+        </form>
+
+
+    </div>
+</div>
+
+
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
